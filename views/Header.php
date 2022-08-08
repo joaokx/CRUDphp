@@ -28,5 +28,11 @@
                 <li class="nav-item">
                 <a class="nav-link" href="?controller=veiculo&acao=listarVeiculo">Listar</a>
                 </li>
+                <li class="nav-item">
+                <a class="nav-link" href="sair.php">Sair</a>
+                </li>
             </ul>
+            <?php
+            
+            ?>
         </nav>

@@ -22,7 +22,18 @@ INSERT INTO `caracteristicas` (`id`, `nome`) VALUES
 (5, 'para cidade'),
 (6, 'para longas viagens');
 
+DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(220) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(220) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `senha` varchar(220) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
+(1, 'Joao', 'joaopedrobsi10@gmail.com', 'tania657');
+COMMIT;
 
 CREATE TABLE `caracteristicas_veiculos` (
   `idCaracteristica` int(11) NOT NULL,
