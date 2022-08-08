@@ -32,7 +32,7 @@ session_start();
         }else{
             echo "<div id='dados-usuario'>";
             echo "<button type='button' class='btn btn-outline-primary' data-bs-toggle='modal'href='index2.php'data-bs-target='#loginModal'>Acessar</button>";
-            header("Location: index.php");
+            
             echo "</div>";
         }
 
@@ -47,7 +47,7 @@ session_start();
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form id="login-usuario-form">
+                    <form id="login-usuario-form" action="index2.php" method="POST">
                         <span id="msgAlertErroLogin"></span>
                         <div class="mb-3">
                             <label for="email" class="col-form-label">Usuário:</label>
